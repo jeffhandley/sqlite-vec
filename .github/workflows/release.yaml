@@ -6,7 +6,7 @@ permissions:
   contents: read
 jobs:
   build-linux-x86_64-extension:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - run: ./scripts/vendor.sh
@@ -250,7 +250,7 @@ jobs:
           name: sqlite-vec-iossimulator-x86_64-extension
           path: dist/iossimulator-x86_64
       - run: |
-          curl -L https://github.com/asg017/sqlite-dist/releases/download/v0.0.1-alpha.17/sqlite-dist-x86_64-unknown-linux-gnu.tar.xz \
+          curl -L https://github.com/jeffhandley/sqlite-dist/releases/download/v0.0.1-alpha.19.nuget/sqlite-dist-x86_64-unknown-linux-gnu.tar.xz \
             | tar xfJ - --strip-components 1
       - run: make sqlite-vec.h
       - run: ./sqlite-dist ./sqlite-dist.toml --input dist/ --output distx/ --version $(cat VERSION)
