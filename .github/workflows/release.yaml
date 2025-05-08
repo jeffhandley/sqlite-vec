@@ -186,12 +186,14 @@ jobs:
     needs:
       [
         build-linux-x86_64-extension,
+        build-linux-aarch64-extension,
         build-macos-x86_64-extension,
         build-macos-aarch64-extension,
         build-windows-x86_64-extension,
         build-wasm32-emscripten,
         build-android-extensions,
         build-ios-extensions,
+        build-cosmopolitan
       ]
     permissions:
       contents: write
