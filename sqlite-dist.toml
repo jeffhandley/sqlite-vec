@@ -1,11 +1,12 @@
 [package]
 name = "sqlite-vec"
-license = "MIT OR Apache"
+license = "MIT"
 homepage = "https://alexgarcia.xyz/sqlite-vec"
 repo = "https://github.com/asg017/sqlite-vec"
 description = "A vector search SQLite extension."
 authors = ["Alex Garcia"]
-git_tag_format = "v$VERSION"
+owners = ["jeffhandley"]
+git_tag_format = "v$VERSION.nuget"
 
 [targets]
 github_releases = {}
@@ -20,3 +21,5 @@ sqlite_utils = {}
 npm = {}
 
 gem = { module_name = "SqliteVec" }
+
+nuget = { friendly_name = "Vector" }
