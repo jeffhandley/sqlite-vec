@@ -5,7 +5,6 @@ homepage = "https://alexgarcia.xyz/sqlite-vec"
 repo = "https://github.com/asg017/sqlite-vec"
 description = "A vector search SQLite extension."
 authors = ["Alex Garcia"]
-owners = ["jeffhandley"]
 git_tag_format = "v$VERSION.nuget"
 
 [targets]
@@ -22,4 +21,4 @@ npm = {}
 
 gem = { module_name = "SqliteVec" }
 
-nuget = { friendly_name = "Vector" }
+nuget = { owners = "jeffhandley", friendly_name = "Vector" }
